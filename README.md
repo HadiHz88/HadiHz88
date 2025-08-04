@@ -148,9 +148,7 @@ I'm a **Full Stack Developer** passionate about creating elegant solutions to co
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=HadiHz88&layout=compact&theme=tokyonight&langs_count=8)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=HadiHz88&theme=tokyonight&hide_border=true)
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=HadiHz88&theme=tokyo-night&hide_border=true)
+![Contribution Calendar](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HadiHz88&theme=tokyonight)
 
 </div>
 
@@ -192,27 +190,13 @@ I'm a **Full Stack Developer** passionate about creating elegant solutions to co
 
 ### ⚡ Fun Fact
 
-I can debug code faster than I can decide what to have for lunch! Currently learning to debug cloud infrastructure too! ☁️
+I am a gamer to the core!
 
 </details>
 
 ---
 
 <div align="center">
-
-### 💡 Quote of the Day
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
-### 🐍 GitHub Contribution Snake
-
-![Snake animation](https://raw.githubusercontent.com/HadiHz88/HadiHz88/output/github-contribution-grid-snake.svg)
-
-### 🔥 GitHub Contribution Calendar
-
-![Contribution Calendar](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HadiHz88&theme=tokyonight)
-
----
 
 **Let's connect and build something amazing together!** 🚀
 
