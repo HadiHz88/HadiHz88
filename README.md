@@ -1,10 +1,11 @@
 <div align="center">
-  
-# Hi there, I'm Hadi! <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" height="28px" alt="hi">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full+Stack+Web+%26+Mobile+Developer;Cloud-Native+Software+Enthusiast;AWS+Technologies+Specialist;Problem+Solver+%26+Code+Architect)](https://git.io/typing-svg)
+# Hi there, I'm Hadi! 👋
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full+Stack+Software+Engineer;Cloud-Native+Solutions+Architect;AWS+%26+Serverless+Specialist;Master's+Student+in+Computer+Science)](https://git.io/typing-svg)
 
 [![GitHub followers](https://img.shields.io/github/followers/HadiHz88?label=Follow&style=social)](https://github.com/HadiHz88)
+[![Profile Views](https://komarev.com/ghpvc/?username=HadiHz88&color=36BCF7&style=flat-square)](https://github.com/HadiHz88)
 
 </div>
 
@@ -12,51 +13,82 @@
 
 ## 🚀 About Me
 
-I'm a **Full Stack Developer** passionate about creating elegant solutions to complex problems. Currently working as a **Full Stack Developer Intern** at ZeroAndOne, focusing on cloud-native software development and AWS technologies.
+I'm a **Full Stack Software Engineer** with expertise in building scalable cloud-native applications and modern web solutions. Currently pursuing my **Master's in Computer Science** at Lebanese University while working as a **Computer Lab Assistant** teaching Data Structures & Algorithms.
 
-<!-- > *"Code is like humor. When you have to explain it, it's bad."* – Cory House -->
+> *Passionate about solving complex technical challenges and mentoring fellow developers* 🎯
 
-## 📫 Connect with me
+## 📫 Connect with Me
 
-[![YouTube Badge](https://img.shields.io/badge/-HadiHz88-e74c3c?style=flat&labelColor=e74c3c&logo=youtube&logoColor=white)](https://www.youtube.com/@HadiHz88) [![Instagram Badge](https://img.shields.io/badge/-%5Fhadi%5Fhz-e84393?style=flat&labelColor=e84393&logo=instagram&logoColor=white)](https://www.instagram.com/%5Fhadi%5Fhz/) [![Facebook Badge](https://img.shields.io/badge/-Hadi%20Hijazi-1877F2?style=flat&labelColor=1877F2&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100005692666852) [![LinkedIn Badge](https://img.shields.io/badge/-Hadi%20Hijazi-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hadi-hijazi-27525b339/)
+<div align="center">
 
-## 👨‍💻 What I'm up to
+[![YouTube](https://img.shields.io/badge/-HadiHz88-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@HadiHz88) [![Instagram](https://img.shields.io/badge/-@_hadi_hz-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/%5Fhadi%5Fhz/) [![LinkedIn](https://img.shields.io/badge/-Hadi%20Hijazi-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hadi-hijazi-27525b339/) [![Facebook](https://img.shields.io/badge/-Hadi%20Hijazi-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100005692666852) [![Email](https://img.shields.io/badge/-hijazih24@gmail.com-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:hijazih24@gmail.com)
 
-- 🚀 **Full Stack Developer Intern** at ZeroAndOne - Cloud-native software & AWS consulting company
-- ☁️ Currently undergoing foundational **AWS training** (cloud architecture, networking, cloud economics)
-- 🎓 Finishing my Computer Science degree at Lebanese University (~3.1 GPA)
-- 👨‍🏫 **Computer Lab Assistant** teaching Data Structures & Algorithms
-- 💻 Building dynamic full-stack applications with modern technologies
+</div>
 
-## 💼 Current Experience
+## Before We Start
 
-**ZeroAndOne** - *Full Stack Developer Intern* (July 2025 - Present)
+Feel free to check out my [website](https://www.hadihz.me) to get the full experience!
 
-- Participating in a structured 9-week internship focused on full-stack development and cloud computing
-- Undergoing official AWS Partner training courses
+## 👨‍💻 What I'm Up To
 
-**Lebanese University** - *Computer Lab Assistant* (February 2024 - Present)
+```typescript
+const hadi = {
+    currentFocus: "Master's in Computer Science @ Lebanese University",
+    role: "Looking for Full-Time Software Engineering Opportunities",
+    recentAccomplishment: "Completed AWS Partner Training & Full Stack Internship",
+    workingOn: ["Personal Portfolio & Course Platform", "Cloud-Native Applications"],
+    learning: ["Advanced AWS Services", "Microservices Architecture", "System Design"],
+    askMeAbout: ["React", "NestJS", "AWS", "System Architecture", "DSA"],
+    funFact: "I'm a gamer to the core! 🎮"
+};
+```
 
-- Teaching Data Structures & Algorithms concepts and providing debugging support
-- Reviewing assignments and helping students with practical applications
+## 💼 Experience
 
-## 🛠️ Technologies & Tools
+### ☁️ **ZeroAndOne** - *Full Stack Developer Intern*
+
+**July 2025 - Sept 2025** | Cloud-native software & AWS consulting company
+
+- Completed intensive 9-week full-stack development and cloud computing internship
+- Successfully completed AWS Partner training (cloud architecture, networking, security, cost optimization)
+- Engineered serverless applications using AWS Lambda, S3, DynamoDB, and Cognito
+- Implemented CI/CD pipelines and infrastructure-as-code solutions
+
+### 🎓 **Lebanese University** - *Computer Lab Assistant*
+
+**Feb 2024 - Present** | Data Structures & Algorithms Course
+
+- Facilitate weekly lab sessions for 30+ students on fundamental and advanced DSA concepts
+- Provide technical mentorship through code reviews and debugging sessions
+- Help students develop strong problem-solving skills and write efficient code
+
+## 🎓 Education
+
+**Master's in Computer Science** | Lebanese University | *Oct 2025 - Present*
+
+**Bachelor's in Computer Science** | Lebanese University | *Oct 2021 - June 2025*
+
+## 🛠️ Tech Stack
 
 ### Languages
 
-[![Java Badge](https://img.shields.io/badge/-Java-007396?style=for-the-badge&labelColor=black&logo=openjdk&logoColor=white)](#) [![C Badge](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&labelColor=black&logo=c&logoColor=white)](#) [![PHP Badge](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&labelColor=black&logo=php&logoColor=white)](#) [![C Sharp Badge](https://img.shields.io/badge/-C%23-68217A?style=for-the-badge&labelColor=black&logo=c%2B%2B&logoColor=white)](#) [![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#) [![TypeScript Badge](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&labelColor=black&logo=typescript&logoColor=white)](#) [![Dart Badge](https://img.shields.io/badge/-Dart-0175C2?style=for-the-badge&labelColor=black&logo=dart&logoColor=white)](#) [![SQL Badge](https://img.shields.io/badge/-SQL-CC2927?style=for-the-badge&labelColor=black&logo=mysql&logoColor=white)](#)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=openjdk&logoColor=white) ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) ![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-### Frameworks & Libraries
+### Frontend
 
-[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#) [![NestJS Badge](https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&labelColor=black&logo=nestjs&logoColor=E0234E)](#) [![Laravel Badge](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&labelColor=black&logo=laravel&logoColor=FF2D20)](#) [![ASP.NET Badge](https://img.shields.io/badge/-ASP.NET-512BD4?style=for-the-badge&labelColor=black&logo=dotnet&logoColor=512BD4)](#) [![Flutter Badge](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&labelColor=black&logo=flutter&logoColor=02569B)](#) [![Tailwind Badge](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&labelColor=black&logo=tailwindcss&logoColor=38B2AC)](#)
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Redux](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
-### Tools & Cloud
+### Backend
 
-[![AWS Badge](https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&labelColor=black&logo=amazon-aws&logoColor=white)](#) [![Git Badge](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&labelColor=black&logo=git&logoColor=white)](#) [![Postman Badge](https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&labelColor=black&logo=postman&logoColor=white)](#) [![Docker Badge](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&labelColor=black&logo=docker&logoColor=white)](#) [![VS Code Badge](https://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&labelColor=black&logo=visual-studio-code&logoColor=white)](#)
+![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) ![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![ASP.NET](https://img.shields.io/badge/-ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
 ### Databases
 
-[![MySQL Badge](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&labelColor=black&logo=mysql&logoColor=white)](#) [![PostgreSQL Badge](https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&labelColor=black&logo=postgresql&logoColor=white)](#) [![SQLite Badge](https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&labelColor=black&logo=sqlite&logoColor=white)](#) [![Prisma Badge](https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&labelColor=black&logo=prisma&logoColor=white)](#)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white) ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=for-the-badge&logo=amazon-dynamodb&logoColor=white) ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+
+### Cloud & DevOps
+
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 ## 📚 Featured Projects
 
@@ -66,9 +98,7 @@ I'm a **Full Stack Developer** passionate about creating elegant solutions to co
 
 ### 🎯 **Dynamic Data Entry & Template-Based Form System**
 
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#)
-[![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
-[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#)
+[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#) [![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)](#) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#)
 
 **Key Features:**
 
@@ -82,9 +112,7 @@ I'm a **Full Stack Developer** passionate about creating elegant solutions to co
 
 ### 🌐 **Bikhedemtak - Local Service Network**
 
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#)
-[![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)](#)
-[![Android](https://img.shields.io/badge/-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](#)
+[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#) [![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)](#) [![Android](https://img.shields.io/badge/-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](#)
 
 **Key Features:**
 
@@ -100,8 +128,7 @@ I'm a **Full Stack Developer** passionate about creating elegant solutions to co
 
 ### 📊 **DonationsManager - Offline Tracking System**
 
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#)
-[![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](#)
+[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#) [![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](#)
 
 **Key Features:**
 
@@ -113,11 +140,9 @@ I'm a **Full Stack Developer** passionate about creating elegant solutions to co
 </td>
 <td width="50%">
 
-### 🚀 **Personal Website Backend** (Current)
+### 🚀 **CloudQ- GenAI Powered ChatBot and LMS**
 
-[![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)](#)
-[![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)](#)
-[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#)
+[![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)](#) [![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)](#) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#) [![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
 
 **Key Features:**
 
@@ -125,84 +150,56 @@ I'm a **Full Stack Developer** passionate about creating elegant solutions to co
 - 🗄️ Prisma ORM integration
 - 🔄 RESTful API design
 - 📝 Comprehensive documentation
+- 🤖 GenAI chatbot for learning assistance
+- 📚 Advanced React State Management Patterns
 
 </td>
 </tr>
 </table>
 
-## 🏆 Achievements & Certifications
+## 📊 GitHub Statistics
 
 <div align="center">
 
-[![AWS Training](https://img.shields.io/badge/-AWS%20Partner%20Training-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](#)
-[![Teaching Assistant](https://img.shields.io/badge/-Teaching%20Assistant-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](#)
-[![Full Stack Intern](https://img.shields.io/badge/-Full%20Stack%20Intern-00D9FF?style=for-the-badge&logo=developer-dot-dev&logoColor=black)](#)
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=HadiHz88&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HadiHz88&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
 
 </div>
-
-## 📊 GitHub Analytics
 
 <div align="center">
-  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=HadiHz88&count_private=true&theme=tokyonight&hide=contribs,prs&show_icons=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=HadiHz88&layout=compact&theme=tokyonight&langs_count=8)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=HadiHz88&theme=tokyonight&hide_border=true)
 
-![Contribution Calendar](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HadiHz88&theme=tokyonight)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=HadiHz88&theme=tokyo-night&hide_border=true&area=true)
 
 </div>
 
-## 🌐 Languages
+## 🌍 Languages
 
-- 🇱🇧 **Arabic** (Native)
-- 🇺🇸 **English** (Fluent)
-- 🇫🇷 **French** (Fluent)
-- 🇩🇪 **German** (Intermediate)
+- 🇱🇧 **Arabic** - Native
+- 🇺🇸 **English** - Fluent
+- 🇫🇷 **French** - Fluent
+- 🇩🇪 **German** - Intermediate
 
-## 📝 Resume & Contact
+## 🎯 2025 Goals
 
-- 📧 Email: <hijazih24@gmail.com>
-- 📄 [My Resume/CV](util/HadiHIJAZI_Resume.docx)
-
-<details>
-<summary>More about me</summary>
-<br>
-
-### 🌟 Interests & Soft Skills
-
-- **Technical**: Full Stack Development, Mobile App Development, Cloud Computing, Problem Solving
-- **Personal**: Teamwork, Empathy, Emotional Intelligence, Adaptability
-
-### 🎯 Goals for 2025
-
-- Complete AWS certification and cloud development specialization
-- Build a comprehensive portfolio showcasing cloud-native applications
-- Master advanced React patterns and TypeScript
-- Contribute to 5+ open source projects
-- Launch my own SaaS application
-
-### 🤝 Volunteering
-
-**LUCSC Member** - Lebanese University Computer Science Club
-
-- Actively participate in organizing and supporting club events
-- Promote computer science and technology among students
-
-### ⚡ Fun Fact
-
-I am a gamer to the core!
-
-</details>
+- ✅ ~~Complete AWS certification and cloud development specialization~~
+- 🚀 ~~Build comprehensive portfolio showcasing cloud-native applications~~
+- 📚 ~~Master advanced React patterns and TypeScript~~
+- 💻 Contribute to 5+ open source projects
+- 🎯 Launch my own SaaS application
+- 🎓 Excel in Master's program
 
 ---
 
 <div align="center">
 
-**Let's connect and build something amazing together!** 🚀
+### 💬 Let's Connect and Build Something Amazing Together! 🚀
 
 [![Email](https://img.shields.io/badge/-hijazih24@gmail.com-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:hijazih24@gmail.com)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=react&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/-Connect%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hadi-hijazi-27525b339/)
+[![GitHub](https://img.shields.io/badge/-Follow%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HadiHz88)
 
-⭐️ From [HadiHz88](https://github.com/HadiHz88) with ❤️
+<sub>⭐️ From [HadiHz88](https://github.com/HadiHz88) with ❤️</sub>
 
 </div>
