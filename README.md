@@ -168,7 +168,7 @@ const hadi = {
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=HadiHz88&theme=tokyonight&hide_border=true)
+![Snake animation](https://github.com/HadiHz88/HadiHz88/blob/output/snake.svg)
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=HadiHz88&theme=tokyo-night&hide_border=true&area=true)
 
