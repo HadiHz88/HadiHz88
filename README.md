@@ -170,7 +170,7 @@ const hadi = {
 
 ![Snake animation](https://github.com/HadiHz88/HadiHz88/blob/output/snake.svg)
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=HadiHz88&theme=tokyo-night&hide_border=true&area=true)
+![3D Contribs](profile-3d-contrib/profile-night-rainbow.svg)
 
 </div>
 
@@ -203,3 +203,9 @@ const hadi = {
 <sub>⭐️ From [HadiHz88](https://github.com/HadiHz88) with ❤️</sub>
 
 </div>
+
+<img alt="wave animation" src="images/wave_animation_dark.svg#gh-dark-mode-only">
+<img alt="wave animation" src="images/wave_animation_light.svg#gh-light-mode-only">
+
+<img alt="" src="images/themed_line_dark.svg#gh-dark-mode-only">
+<img alt="" src="images/themed_line_light.svg#gh-light-mode-only">
