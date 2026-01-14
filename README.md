@@ -35,9 +35,8 @@ Feel free to check out my [website](https://www.hadihz.me) to get the full exper
 const hadi = {
     currentFocus: "Master's in Computer Science @ Lebanese University",
     role: "Looking for Full-Time Software Engineering Opportunities",
-    recentAccomplishment: "Completed AWS Partner Training & Full Stack Internship",
     workingOn: ["Personal Portfolio & Course Platform", "Cloud-Native Applications"],
-    learning: ["Advanced AWS Services", "Microservices Architecture", "System Design"],
+    learning: ["DevOps practices", "Microservices Architecture", "Mobile Developement with Expo/React Native"],
     askMeAbout: ["React", "NestJS", "AWS", "System Architecture", "DSA"],
     funFact: "I'm a gamer to the core! 🎮"
 };
@@ -148,10 +147,8 @@ const hadi = {
 
 - 🏗️ Modern NestJS architecture
 - 🗄️ Prisma ORM integration
-- 🔄 RESTful API design
-- 📝 Comprehensive documentation
 - 🤖 GenAI chatbot for learning assistance
-- 📚 Advanced React State Management Patterns
+- 📚 Advanced React State Management Patterns- RTKQuery
 
 </td>
 </tr>
