@@ -2,7 +2,7 @@
 
 # Hi there, I'm Hadi! 👋
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full+Stack+Software+Engineer;Cloud-Native+Solutions+Architect;AWS+%26+Serverless+Specialist;Master's+Student+in+Computer+Science)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Full+Stack+Software+Engineer;Cloud-Native+Solutions+Architect;AWS+%26+Serverless+Specialist;Master's+Student+in+Computer+Science;Currently+Building+%40+Poyesis+%F0%9F%87%B1%F0%9F%87%A7)](https://git.io/typing-svg)
 
 [![GitHub followers](https://img.shields.io/github/followers/HadiHz88?label=Follow&style=social)](https://github.com/HadiHz88)
 [![Profile Views](https://komarev.com/ghpvc/?username=HadiHz88&color=36BCF7&style=flat-square)](https://github.com/HadiHz88)
@@ -13,7 +13,7 @@
 
 ## 🚀 About Me
 
-I'm a **Full Stack Software Engineer** with expertise in building scalable cloud-native applications and modern web solutions. Currently pursuing my **Master's in Computer Science** at Lebanese University while working as a **Computer Lab Assistant** teaching Data Structures & Algorithms.
+I'm a **Full Stack Software Engineer** with expertise in building scalable cloud-native applications and modern web solutions. Currently pursuing my **Master's in Computer Science** at Lebanese University while interning at **Poyesis** in Beirut as a **Full Stack Developer**.
 
 > *Passionate about solving complex technical challenges and mentoring fellow developers* 🎯
 
@@ -34,15 +34,24 @@ Feel free to check out my [website](https://www.hadihz.me) to get the full exper
 ```typescript
 const hadi = {
     currentFocus: "Master's in Computer Science @ Lebanese University",
-    role: "Looking for Full-Time Software Engineering Opportunities",
-    workingOn: ["Personal Portfolio & Course Platform", "Cloud-Native Applications"],
-    learning: ["DevOps practices", "Microservices Architecture", "Mobile Developement with Expo/React Native"],
-    askMeAbout: ["React", "NestJS", "AWS", "System Architecture", "DSA"],
+    role: "Full Stack Intern @ Poyesis 🇱🇧 | Open to Full-Time Opportunities",
+    workingOn: ["Turborepo Monorepo with Astro + Kottster", "Cloud-Native Applications"],
+    learning: ["DevOps practices", "Microservices Architecture", "Mobile Development with Expo/React Native"],
+    askMeAbout: ["React", "Next.js", "NestJS", "AWS", "Astro", "System Architecture", "DSA"],
     funFact: "I'm a gamer to the core! 🎮"
 };
 ```
 
 ## 💼 Experience
+
+### 🏢 **Poyesis** - *Full Stack Developer Intern*
+
+**March 2026 - Present** | Software & Digital Solutions · Beirut, Lebanon 🇱🇧
+
+- Building a full-stack content platform using a **Turborepo** monorepo architecture
+- Developing an **Astro**-based public-facing web frontend with multilingual (i18n) support
+- Engineering an admin panel with **Strapi**
+- Working with **TypeScript**, **Bun**, **Astro** across a shared monorepo workspace
 
 ### ☁️ **ZeroAndOne** - *Full Stack Developer Intern*
 
@@ -71,24 +80,25 @@ const hadi = {
 
 ### Languages
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=openjdk&logoColor=white) ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) ![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=openjdk&logoColor=white) ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) ![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### Frontend
 
-![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Redux](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white) ![Redux](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![Expo](https://img.shields.io/badge/-Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
 
 ### Backend
 
-![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) ![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![ASP.NET](https://img.shields.io/badge/-ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![ASP.NET](https://img.shields.io/badge/-ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![Strapi](https://img.shields.io/badge/-Strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white)
 
-### Databases
+### Databases & ORMs
 
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white) ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=for-the-badge&logo=amazon-dynamodb&logoColor=white) ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white) ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white) ![Drizzle ORM](https://img.shields.io/badge/-Drizzle_ORM-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black) ![EFCore](https://img.shields.io/badge/-EFCore-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
 ### Cloud & DevOps
 
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-FF9900?style=for-the-badge&logo=aws&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Turborepo](https://img.shields.io/badge/-Turborepo-EEEEEE?style=for-the-badge&logo=turborepo&logoColor=black)
 
+<!--
 ## 📚 Featured Projects
 
 <table>
@@ -153,6 +163,7 @@ const hadi = {
 </td>
 </tr>
 </table>
+-->
 
 ## 📊 GitHub Statistics
 
@@ -178,14 +189,14 @@ const hadi = {
 - 🇫🇷 **French** - Fluent
 - 🇩🇪 **German** - Intermediate
 
-## 🎯 2025 Goals
+<!-- ## 🎯 2025 Goals
 
 - ✅ ~~Complete AWS certification and cloud development specialization~~
 - 🚀 ~~Build comprehensive portfolio showcasing cloud-native applications~~
 - 📚 ~~Master advanced React patterns and TypeScript~~
 - 💻 Contribute to 5+ open source projects
-- 🎯 Launch my own SaaS application
-- 🎓 Excel in Master's program
+- 🎯 Launch my own Mobile application
+- 🎓 Excel in Master's program -->
 
 ---
 
