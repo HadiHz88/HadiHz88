@@ -9,7 +9,9 @@ Standard library only; runs daily from `.github/workflows/profile-sync.yml`.
 | `EDUCATION` | `/api/educations`, featured | list, newest first |
 | `SKILLS` | `/api/tags`, `isSkill=true`, featured | SVG banner in `assets/generated/skills/` |
 | `PROJECTS` | `/api/projects`, featured, active first, max 6 | SVG cards in `assets/generated/projects/` |
-| `SOCIALS`, `CONTACT` | `/api/profile` social fields; a link whose host does not match its platform is skipped | SVG buttons in `assets/generated/socials/` |
+| `ABOUT` | `/api/profile` description | Markdown, raw HTML neutralised |
+| `TYPING` | `/api/profile` headline, position, city and country | animated SVG in `assets/generated/profile/` |
+| `SOCIALS`, `CONTACT` | `/api/profile` links; a link whose host does not match its platform is skipped | SVG buttons in `assets/generated/profile/` |
 | `STATS` | GitHub GraphQL with `GITHUB_TOKEN` | SVG banner in `assets/generated/stats/` |
 
 Every section fails soft: a non-200, a timeout (10s per request) or an empty result keeps

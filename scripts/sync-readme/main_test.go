@@ -165,3 +165,21 @@ func TestWrapLimitsLines(t *testing.T) {
 		}
 	}
 }
+
+func TestProfileTextBlocks(t *testing.T) {
+	p := Profile{Headline: " Full-Stack Developer ", Position: "Engineer @ Co", City: "Beirut", Country: "Lebanon", Description: "**Hi** <script>x</script>"}
+	lines := typingLines(p)
+	if strings.Join(lines, "|") != "Full-Stack Developer|Engineer @ Co|Based in Beirut, Lebanon" {
+		t.Fatalf("lines: %q", lines)
+	}
+	if got := renderAbout(p); got != "**Hi** &lt;script&gt;x&lt;/script&gt;" {
+		t.Fatalf("about: %q", got)
+	}
+	svg := string(typingSVG(lines, "#000000"))
+	if strings.Count(svg, "<clipPath") != 3 || !strings.Contains(svg, `calcMode="discrete"`) {
+		t.Fatal("expected one discrete clip animation per line")
+	}
+	if typingLines(Profile{City: "Beirut"})[0] != "Based in Beirut" {
+		t.Fatal("partial location")
+	}
+}

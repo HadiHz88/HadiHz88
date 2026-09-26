@@ -99,14 +99,14 @@ func main() {
 				body, files, err := renderSkills(items, iconsFor(ctx, "SKILLS", items), dir("skills"), *site)
 				return result{blocks: single("SKILLS", body), dir: dir("skills"), files: files, err: err}
 			}},
-			section{"SOCIALS", func(ctx context.Context) result {
+			section{"PROFILE", func(ctx context.Context) result {
 				p, err := fetchProfile(ctx, c)
 				if err != nil {
 					return result{err: err}
 				}
 				links, notes := socialLinks(p)
 				for _, n := range notes {
-					warn("SOCIALS: " + n + "; button skipped")
+					warn("PROFILE: " + n + "; button skipped")
 				}
 				var names []string
 				for _, l := range links {
@@ -114,10 +114,27 @@ func main() {
 				}
 				icons, err := fetchIcons(ctx, names)
 				if err != nil {
-					warn(fmt.Sprintf("SOCIALS: icons: %v; affected buttons fall back to dots", err))
+					warn(fmt.Sprintf("PROFILE: icons: %v; affected buttons fall back to dots", err))
 				}
-				blocks, files, err := renderSocials(links, icons, dir("socials"))
-				return result{blocks: blocks, dir: dir("socials"), files: files, err: err}
+				blocks, files, err := renderSocials(links, icons, dir("profile"))
+				if err != nil {
+					return result{err: err}
+				}
+				if about := renderAbout(p); about != "" {
+					blocks["ABOUT"] = about
+				} else {
+					warn("PROFILE: description is empty; keeping the previous About block")
+				}
+				if lines := typingLines(p); len(lines) > 0 {
+					body, typing := renderTyping(lines, dir("profile"))
+					blocks["TYPING"] = body
+					for k, v := range typing {
+						files[k] = v
+					}
+				} else {
+					warn("PROFILE: no headline, position or location; keeping the previous typing banner")
+				}
+				return result{blocks: blocks, dir: dir("profile"), files: files}
 			}},
 		)
 	}

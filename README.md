@@ -2,7 +2,9 @@
 
 # Hi there, I'm Hadi! 👋
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Full+Stack+Software+Engineer;Cloud-Native+Solutions+Architect;AWS+%26+Serverless+Specialist;Master's+Student+in+Computer+Science;Currently+Building+%40+Poyesis+%F0%9F%87%B1%F0%9F%87%A7)](https://git.io/typing-svg)
+<!-- TYPING:START -->
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/typing-dark.svg"><img alt="Full-Stack Developer · Software Engineer @ Poyesis · Based in Beirut, Lebanon" src="assets/generated/profile/typing-light.svg"></picture>
+<!-- TYPING:END -->
 
 [![GitHub followers](https://img.shields.io/github/followers/HadiHz88?label=Follow&style=social)](https://github.com/HadiHz88)
 [![Profile Views](https://komarev.com/ghpvc/?username=HadiHz88&color=36BCF7&style=flat-square)](https://github.com/HadiHz88)
@@ -13,20 +15,20 @@
 
 ## 🚀 About Me
 
-I'm a **Full Stack Software Engineer** with expertise in building scalable cloud-native applications and modern web solutions. Currently pursuing my **Master's in Computer Science** at Lebanese University while interning at **Poyesis** in Beirut as a **Full Stack Developer**.
-
-> *Passionate about solving complex technical challenges and mentoring fellow developers* 🎯
+<!-- ABOUT:START -->
+**Passionate full-stack developer** with ~2 years of experience in building *dynamic web applications*. Skilled in **JavaScript**, **TypeScript**, **React**, **Node.js**, and *database management*. Committed to writing **clean, efficient code** and continuously learning *new technologies*.
+<!-- ABOUT:END -->
 
 ## 📫 Connect with Me
 
 <!-- SOCIALS:START -->
 <p align="center">
-<a href="https://github.com/HadiHz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/github-dark.svg"><img alt="GitHub — HadiHz88" src="assets/generated/socials/github-light.svg"></picture></a>
-<a href="https://www.linkedin.com/in/hadi-hijazi-27525b339/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/linkedin-dark.svg"><img alt="LinkedIn — Hadi Hijazi" src="assets/generated/socials/linkedin-light.svg"></picture></a>
-<a href="https://youtube.com/@hadihz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/youtube-dark.svg"><img alt="YouTube — @hadihz88" src="assets/generated/socials/youtube-light.svg"></picture></a>
+<a href="https://github.com/HadiHz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/github-dark.svg"><img alt="GitHub — HadiHz88" src="assets/generated/profile/github-light.svg"></picture></a>
+<a href="https://www.linkedin.com/in/hadi-hijazi-27525b339/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/linkedin-dark.svg"><img alt="LinkedIn — Hadi Hijazi" src="assets/generated/profile/linkedin-light.svg"></picture></a>
+<a href="https://youtube.com/@hadihz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/youtube-dark.svg"><img alt="YouTube — @hadihz88" src="assets/generated/profile/youtube-light.svg"></picture></a>
 <br>
-<a href="https://www.instagram.com/hadi.hz.88/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/instagram-dark.svg"><img alt="Instagram — @hadi.hz.88" src="assets/generated/socials/instagram-light.svg"></picture></a>
-<a href="mailto:hijazih24@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/email-dark.svg"><img alt="Email — hijazih24@gmail.com" src="assets/generated/socials/email-light.svg"></picture></a>
+<a href="https://www.instagram.com/hadi.hz.88/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/instagram-dark.svg"><img alt="Instagram — @hadi.hz.88" src="assets/generated/profile/instagram-light.svg"></picture></a>
+<a href="mailto:hijazih24@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/email-dark.svg"><img alt="Email — hijazih24@gmail.com" src="assets/generated/profile/email-light.svg"></picture></a>
 </p>
 <!-- SOCIALS:END -->
 
@@ -115,9 +117,9 @@ const hadi = {
 
 <!-- CONTACT:START -->
 <p align="center">
-<a href="mailto:hijazih24@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/email-dark.svg"><img alt="Email — hijazih24@gmail.com" src="assets/generated/socials/email-light.svg"></picture></a>
-<a href="https://www.linkedin.com/in/hadi-hijazi-27525b339/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/linkedin-dark.svg"><img alt="LinkedIn — Hadi Hijazi" src="assets/generated/socials/linkedin-light.svg"></picture></a>
-<a href="https://github.com/HadiHz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/github-dark.svg"><img alt="GitHub — HadiHz88" src="assets/generated/socials/github-light.svg"></picture></a>
+<a href="mailto:hijazih24@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/email-dark.svg"><img alt="Email — hijazih24@gmail.com" src="assets/generated/profile/email-light.svg"></picture></a>
+<a href="https://www.linkedin.com/in/hadi-hijazi-27525b339/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/linkedin-dark.svg"><img alt="LinkedIn — Hadi Hijazi" src="assets/generated/profile/linkedin-light.svg"></picture></a>
+<a href="https://github.com/HadiHz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/profile/github-dark.svg"><img alt="GitHub — HadiHz88" src="assets/generated/profile/github-light.svg"></picture></a>
 </p>
 <!-- CONTACT:END -->
 

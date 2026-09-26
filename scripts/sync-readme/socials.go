@@ -11,12 +11,16 @@ import (
 )
 
 type Profile struct {
-	Email     string `json:"email"`
-	GitHub    string `json:"github"`
-	LinkedIn  string `json:"linkedin"`
-	YouTube   string `json:"youtube"`
-	Instagram string `json:"instagram"`
-	Facebook  string `json:"facebook"`
+	Headline    string `json:"headline"`
+	Position    string `json:"position"`
+	Description string `json:"description"`
+	City        string `json:"city"`
+	Country     string `json:"country"`
+	Email       string `json:"email"`
+	GitHub      string `json:"github"`
+	LinkedIn    string `json:"linkedin"`
+	YouTube     string `json:"youtube"`
+	Instagram   string `json:"instagram"`
 }
 
 type social struct {
@@ -29,9 +33,12 @@ func fetchProfile(ctx context.Context, c *client) (Profile, error) {
 	var res struct {
 		Data Profile `json:"data"`
 	}
+	// An explicit field list keeps phone number and date of birth out of the response.
 	err := c.get(ctx, "/api/profile", query(
-		"fields[0]", "email", "fields[1]", "github", "fields[2]", "linkedin",
-		"fields[3]", "youtube", "fields[4]", "instagram", "fields[5]", "facebook",
+		"fields[0]", "headline", "fields[1]", "position", "fields[2]", "description",
+		"fields[3]", "city", "fields[4]", "country", "fields[5]", "email",
+		"fields[6]", "github", "fields[7]", "linkedin", "fields[8]", "youtube",
+		"fields[9]", "instagram",
 	), &res)
 	return res.Data, err
 }
@@ -45,7 +52,6 @@ func socialLinks(p Profile) ([]social, []string) {
 		{key: "linkedin", name: "LinkedIn", icon: "simple-icons:linkedin", color: "#0A66C2", hosts: []string{"linkedin.com"}, href: p.LinkedIn},
 		{key: "youtube", name: "YouTube", icon: "simple-icons:youtube", color: "#FF0000", hosts: []string{"youtube.com", "youtu.be"}, href: p.YouTube},
 		{key: "instagram", name: "Instagram", icon: "simple-icons:instagram", color: "#E4405F", hosts: []string{"instagram.com"}, href: p.Instagram},
-		{key: "facebook", name: "Facebook", icon: "simple-icons:facebook", color: "#0866FF", hosts: []string{"facebook.com", "fb.com"}, href: p.Facebook},
 	}
 	var out []social
 	var notes []string
@@ -94,10 +100,6 @@ func handleOf(key string, u *url.URL) string {
 		return strings.Join(words, " ")
 	case "youtube", "instagram":
 		return "@" + strings.TrimPrefix(seg, "@")
-	case "facebook":
-		if seg == "profile.php" || seg == "" {
-			return "Profile"
-		}
 	}
 	return seg
 }
