@@ -87,7 +87,7 @@ const hadi = {
 
 <div align="center">
 
-![Snake animation](https://github.com/HadiHz88/HadiHz88/blob/output/snake.svg)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake/snake-dark.svg"><img alt="Snake eating my contribution graph" src="assets/generated/snake/snake-light.svg"></picture>
 
 ![3D Contribs](profile-3d-contrib/profile-night-rainbow.svg)
 
