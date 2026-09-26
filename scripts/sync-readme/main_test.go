@@ -74,25 +74,58 @@ func TestReadableSwapsInvisibleColours(t *testing.T) {
 	}
 }
 
-func TestRenderNowKeepsOnlyInProgress(t *testing.T) {
+func TestRenderNowShowsOnlyLatestInProgress(t *testing.T) {
 	now := time.Date(2026, 9, 26, 0, 0, 0, 0, time.UTC)
 	got, err := renderNow([]Experience{
-		{Title: "Old", Featured: true, StartDate: "2025-01-01", EndDate: "2025-06-01"},
-		{Title: "Hidden", Featured: false, StartDate: "2026-01-01"},
+		{Title: "Old", Featured: true, StartDate: "2026-08-01", EndDate: "2026-09-01"},
+		{Title: "Hidden", Featured: false, StartDate: "2026-09-01"},
 		{Title: "Lab", Featured: true, StartDate: "2025-02-01", EmploymentType: "part-time"},
 		{Title: "Job", Company: "Co", URL: "https://co.dev", Featured: true, StartDate: "2026-06-01", EmploymentType: "full-time"},
 	}, now)
 	if err != nil {
 		t.Fatal(err)
 	}
-	if strings.Contains(got, "Old") || strings.Contains(got, "Hidden") {
-		t.Fatalf("ended or unfeatured role rendered:\n%s", got)
-	}
-	if strings.Index(got, "Job") > strings.Index(got, "Lab") {
-		t.Fatalf("newest role should come first:\n%s", got)
-	}
-	if !strings.Contains(got, "[**Co**](https://co.dev)") || !strings.Contains(got, "since Jun 2026") {
+	if strings.Count(got, "\n- ")+1 != 1 || !strings.Contains(got, "**Job** @ [**Co**](https://co.dev)") || !strings.Contains(got, "since Jun 2026") {
 		t.Fatalf("got:\n%s", got)
+	}
+}
+
+func TestSocialLinksRejectsWrongHostsAndParsesHandles(t *testing.T) {
+	links, notes := socialLinks(Profile{
+		Email:     "me@x.dev",
+		GitHub:    "http://github.com/HadiHz88",
+		LinkedIn:  "https://www.linkedin.com/in/hadi-hijazi-27525b339/",
+		YouTube:   "https://youtube.com/@hadihz88?si=abc",
+		Instagram: "http://github.com/HadiHz88",
+	})
+	if len(notes) != 1 || !strings.Contains(notes[0], "Instagram") {
+		t.Fatalf("notes: %v", notes)
+	}
+	got := map[string]string{}
+	for _, l := range links {
+		got[l.key] = l.handle + " " + l.href
+	}
+	want := map[string]string{
+		"github":   "HadiHz88 https://github.com/HadiHz88",
+		"linkedin": "Hadi Hijazi https://www.linkedin.com/in/hadi-hijazi-27525b339/",
+		"youtube":  "@hadihz88 https://youtube.com/@hadihz88",
+		"email":    "me@x.dev mailto:me@x.dev",
+	}
+	if len(got) != len(want) {
+		t.Fatalf("got %v", got)
+	}
+	for k, v := range want {
+		if got[k] != v {
+			t.Errorf("%s: got %q, want %q", k, got[k], v)
+		}
+	}
+}
+
+func TestThousands(t *testing.T) {
+	for in, want := range map[int]string{0: "0", 999: "999", 4796: "4,796", 1234567: "1,234,567"} {
+		if got := thousands(in); got != want {
+			t.Errorf("thousands(%d) = %q", in, got)
+		}
 	}
 }
 

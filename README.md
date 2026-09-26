@@ -19,11 +19,16 @@ I'm a **Full Stack Software Engineer** with expertise in building scalable cloud
 
 ## 📫 Connect with Me
 
-<div align="center">
-
-[![YouTube](https://img.shields.io/badge/-HadiHz88-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@HadiHz88) [![Instagram](https://img.shields.io/badge/-@_hadi_hz-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/%5Fhadi%5Fhz/) [![LinkedIn](https://img.shields.io/badge/-Hadi%20Hijazi-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hadi-hijazi-27525b339/) [![Facebook](https://img.shields.io/badge/-Hadi%20Hijazi-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100005692666852) [![Email](https://img.shields.io/badge/-hijazih24@gmail.com-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:hijazih24@gmail.com)
-
-</div>
+<!-- SOCIALS:START -->
+<p align="center">
+<a href="https://github.com/HadiHz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/github-dark.svg"><img alt="GitHub — HadiHz88" src="assets/generated/socials/github-light.svg"></picture></a>
+<a href="https://www.linkedin.com/in/hadi-hijazi-27525b339/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/linkedin-dark.svg"><img alt="LinkedIn — Hadi Hijazi" src="assets/generated/socials/linkedin-light.svg"></picture></a>
+<a href="https://youtube.com/@hadihz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/youtube-dark.svg"><img alt="YouTube — @hadihz88" src="assets/generated/socials/youtube-light.svg"></picture></a>
+<br>
+<a href="https://www.instagram.com/hadi.hz.88/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/instagram-dark.svg"><img alt="Instagram — @hadi.hz.88" src="assets/generated/socials/instagram-light.svg"></picture></a>
+<a href="mailto:hijazih24@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/email-dark.svg"><img alt="Email — hijazih24@gmail.com" src="assets/generated/socials/email-light.svg"></picture></a>
+</p>
+<!-- SOCIALS:END -->
 
 ## Before We Start
 
@@ -33,14 +38,12 @@ Feel free to check out my [website](https://www.hadihz.me) to get the full exper
 
 <!-- EXPERIENCE:START -->
 - 💼 **Junior Software Engineer** @ **Poyesis** · <sub>Full-time · since Jun 2026 · Beirut, Lebanon</sub>
-- 🧑‍🏫 **Lab Assistant — Data Structures & Algorithms** @ [**Lebanese University**](https://ul.edu.lb) · <sub>Part-time · since Feb 2025 · Beirut, Lebanon</sub>
-  <br><sub>Teaching assistant for the data structures and algorithms labs: arrays, linked lists, stacks, queues, trees, graphs, sorting, searching, and dynamic programming. Runs lab sessions and mentors students one-on-one.</sub>
 <!-- EXPERIENCE:END -->
 
 ```typescript
 const hadi = {
-    workingOn: ["Turborepo Monorepo with Astro + Kottster", "Cloud-Native Applications"],
-    learning: ["DevOps practices", "Microservices Architecture", "Mobile Development with Expo/React Native"],
+    workingOn: ["Student companion mobile app (Expo + React Native)", "Cloud-Native Applications"],
+    learning: ["AI & Data Engineering", "DevOps practices", "Microservices Architecture"],
     askMeAbout: ["React", "Next.js", "NestJS", "AWS", "Astro", "System Architecture", "DSA"],
     funFact: "I'm a gamer to the core! 🎮"
 };
@@ -74,12 +77,11 @@ const hadi = {
 
 ## 📊 GitHub Statistics
 
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=HadiHz88&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HadiHz88&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
-
-</div>
+<!-- STATS:START -->
+<p align="center">
+<a href="https://github.com/HadiHz88?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/stats/stats-dark.svg"><img alt="GitHub stats — 4,801 contributions in the last year, 20 stars, 13 public repositories" src="assets/generated/stats/stats-light.svg" width="100%"></picture></a>
+</p>
+<!-- STATS:END -->
 
 <div align="center">
 
@@ -111,9 +113,13 @@ const hadi = {
 
 ### 💬 Let's Connect and Build Something Amazing Together! 🚀
 
-[![Email](https://img.shields.io/badge/-hijazih24@gmail.com-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:hijazih24@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-Connect%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hadi-hijazi-27525b339/)
-[![GitHub](https://img.shields.io/badge/-Follow%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HadiHz88)
+<!-- CONTACT:START -->
+<p align="center">
+<a href="mailto:hijazih24@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/email-dark.svg"><img alt="Email — hijazih24@gmail.com" src="assets/generated/socials/email-light.svg"></picture></a>
+<a href="https://www.linkedin.com/in/hadi-hijazi-27525b339/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/linkedin-dark.svg"><img alt="LinkedIn — Hadi Hijazi" src="assets/generated/socials/linkedin-light.svg"></picture></a>
+<a href="https://github.com/HadiHz88"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/socials/github-dark.svg"><img alt="GitHub — HadiHz88" src="assets/generated/socials/github-light.svg"></picture></a>
+</p>
+<!-- CONTACT:END -->
 
 <sub>⭐️ From [HadiHz88](https://github.com/HadiHz88) with ❤️</sub>
 

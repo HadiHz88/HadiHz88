@@ -79,7 +79,7 @@ var roleEmoji = map[string]string{
 	"contract":   "📝",
 }
 
-// renderNow lists the featured roles that have not ended, newest first.
+// renderNow shows the single latest featured role that has not ended.
 func renderNow(items []Experience, now time.Time) (string, error) {
 	var cur []Experience
 	for _, e := range items {
@@ -91,6 +91,7 @@ func renderNow(items []Experience, now time.Time) (string, error) {
 		return "", errors.New("no featured experience in progress")
 	}
 	sort.SliceStable(cur, func(i, j int) bool { return cur[i].StartDate > cur[j].StartDate })
+	cur = cur[:1]
 
 	var b strings.Builder
 	for _, e := range cur {

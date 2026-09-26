@@ -60,12 +60,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Sync README sections from the CMS
+      - name: Sync README sections from the CMS and GitHub
         if: always()
         continue-on-error: true
         env:
           STRAPI_URL: ${{ secrets.STRAPI_URL }}
           STRAPI_TOKEN: ${{ secrets.STRAPI_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: go run ./scripts/sync-readme
 
       # One commit for both generators, so they never race each other's push.

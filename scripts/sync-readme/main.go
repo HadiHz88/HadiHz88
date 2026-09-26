@@ -1,4 +1,5 @@
-// Command sync-readme refreshes the CMS-driven blocks of the profile README.
+// Command sync-readme refreshes the generated blocks of the profile README:
+// CMS content from Strapi and activity stats from GitHub.
 //
 // Each section is fetched concurrently and fails soft: on any error the old
 // block stays, a GitHub Actions warning is printed, and the exit code stays 0.
@@ -12,22 +13,25 @@ import (
 	"os"
 	"path"
 	"path/filepath"
+	"sort"
 	"strings"
 	"sync"
 	"time"
 )
 
 type result struct {
-	body  string
-	dir   string // where files are written; the renderer's paths share this prefix
-	files map[string][]byte
-	err   error
+	blocks map[string]string // marker name -> block body
+	dir    string            // where files are written; the renderer's paths share this prefix
+	files  map[string][]byte
+	err    error
 }
 
 type section struct {
-	marker string
-	run    func(ctx context.Context) result
+	name string
+	run  func(ctx context.Context) result
 }
+
+func single(marker, body string) map[string]string { return map[string]string{marker: body} }
 
 func main() {
 	readme := flag.String("readme", "README.md", "README to update in place")
@@ -35,69 +39,105 @@ func main() {
 	site := flag.String("site", "https://hadihz.me", "base URL the cards and banner link to")
 	flag.Parse()
 
-	base := strings.TrimRight(os.Getenv("STRAPI_URL"), "/")
-	token := os.Getenv("STRAPI_TOKEN")
-	if base == "" || token == "" {
-		warn("STRAPI_URL or STRAPI_TOKEN is not set; README left unchanged")
-		return
-	}
-
 	doc, err := os.ReadFile(*readme)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
 
-	c := newClient(base, token)
 	now := time.Now().UTC()
-	projectsDir := path.Join(filepath.ToSlash(*assets), "projects")
-	skillsDir := path.Join(filepath.ToSlash(*assets), "skills")
-	sections := []section{
-		{"PROJECTS", func(ctx context.Context) result {
-			items, err := fetchAll[Project](ctx, c, "/api/projects", query(
-				"filters[featured][$eq]", "true",
-				"populate[tags][fields][0]", "name",
-				"populate[tags][fields][1]", "icon",
-			))
+	dir := func(name string) string { return path.Join(filepath.ToSlash(*assets), name) }
+	var sections []section
+
+	base := strings.TrimRight(os.Getenv("STRAPI_URL"), "/")
+	token := os.Getenv("STRAPI_TOKEN")
+	if base == "" || token == "" {
+		warn("STRAPI_URL or STRAPI_TOKEN is not set; CMS sections left unchanged")
+	} else {
+		c := newClient(base, token)
+		sections = append(sections,
+			section{"PROJECTS", func(ctx context.Context) result {
+				items, err := fetchAll[Project](ctx, c, "/api/projects", query(
+					"filters[featured][$eq]", "true",
+					"populate[tags][fields][0]", "name",
+					"populate[tags][fields][1]", "icon",
+				))
+				if err != nil {
+					return result{err: err}
+				}
+				var tags []Tag
+				for _, p := range selectProjects(items) {
+					tags = append(tags, p.Tags...)
+				}
+				body, files, err := renderProjects(items, iconsFor(ctx, "PROJECTS", tags), dir("projects"), *site)
+				return result{blocks: single("PROJECTS", body), dir: dir("projects"), files: files, err: err}
+			}},
+			section{"EXPERIENCE", func(ctx context.Context) result {
+				items, err := fetchAll[Experience](ctx, c, "/api/experiences", query("filters[featured][$eq]", "true"))
+				if err != nil {
+					return result{err: err}
+				}
+				body, err := renderNow(items, now)
+				return result{blocks: single("EXPERIENCE", body), err: err}
+			}},
+			section{"EDUCATION", func(ctx context.Context) result {
+				items, err := fetchAll[Education](ctx, c, "/api/educations", query("filters[featured][$eq]", "true"))
+				if err != nil {
+					return result{err: err}
+				}
+				body, err := renderEducation(items, now)
+				return result{blocks: single("EDUCATION", body), err: err}
+			}},
+			section{"SKILLS", func(ctx context.Context) result {
+				items, err := fetchAll[Tag](ctx, c, "/api/tags", query(
+					"filters[isSkill][$eq]", "true",
+					"filters[featured][$eq]", "true",
+				))
+				if err != nil {
+					return result{err: err}
+				}
+				body, files, err := renderSkills(items, iconsFor(ctx, "SKILLS", items), dir("skills"), *site)
+				return result{blocks: single("SKILLS", body), dir: dir("skills"), files: files, err: err}
+			}},
+			section{"SOCIALS", func(ctx context.Context) result {
+				p, err := fetchProfile(ctx, c)
+				if err != nil {
+					return result{err: err}
+				}
+				links, notes := socialLinks(p)
+				for _, n := range notes {
+					warn("SOCIALS: " + n + "; button skipped")
+				}
+				var names []string
+				for _, l := range links {
+					names = append(names, l.icon)
+				}
+				icons, err := fetchIcons(ctx, names)
+				if err != nil {
+					warn(fmt.Sprintf("SOCIALS: icons: %v; affected buttons fall back to dots", err))
+				}
+				blocks, files, err := renderSocials(links, icons, dir("socials"))
+				return result{blocks: blocks, dir: dir("socials"), files: files, err: err}
+			}},
+		)
+	}
+
+	ghToken := os.Getenv("GITHUB_TOKEN")
+	login := os.Getenv("GITHUB_REPOSITORY_OWNER")
+	if login == "" {
+		login = "HadiHz88"
+	}
+	if ghToken == "" {
+		warn("GITHUB_TOKEN is not set; STATS left unchanged")
+	} else {
+		sections = append(sections, section{"STATS", func(ctx context.Context) result {
+			s, err := fetchGitHubStats(ctx, ghToken, login)
 			if err != nil {
 				return result{err: err}
 			}
-			var tags []Tag
-			for _, p := range selectProjects(items) {
-				tags = append(tags, p.Tags...)
-			}
-			icons := iconsFor(ctx, "PROJECTS", tags)
-			body, files, err := renderProjects(items, icons, projectsDir, *site)
-			return result{body: body, dir: projectsDir, files: files, err: err}
-		}},
-		{"EXPERIENCE", func(ctx context.Context) result {
-			items, err := fetchAll[Experience](ctx, c, "/api/experiences", query("filters[featured][$eq]", "true"))
-			if err != nil {
-				return result{err: err}
-			}
-			body, err := renderNow(items, now)
-			return result{body: body, err: err}
-		}},
-		{"EDUCATION", func(ctx context.Context) result {
-			items, err := fetchAll[Education](ctx, c, "/api/educations", query("filters[featured][$eq]", "true"))
-			if err != nil {
-				return result{err: err}
-			}
-			body, err := renderEducation(items, now)
-			return result{body: body, err: err}
-		}},
-		{"SKILLS", func(ctx context.Context) result {
-			items, err := fetchAll[Tag](ctx, c, "/api/tags", query(
-				"filters[isSkill][$eq]", "true",
-				"filters[featured][$eq]", "true",
-			))
-			if err != nil {
-				return result{err: err}
-			}
-			icons := iconsFor(ctx, "SKILLS", items)
-			body, files, err := renderSkills(items, icons, skillsDir, *site)
-			return result{body: body, dir: skillsDir, files: files, err: err}
-		}},
+			body, files, err := renderStats(s, dir("stats"), login)
+			return result{blocks: single("STATS", body), dir: dir("stats"), files: files, err: err}
+		}})
 	}
 
 	ctx := context.Background()
@@ -116,17 +156,17 @@ func main() {
 	for i, s := range sections {
 		r := results[i]
 		if r.err != nil {
-			warn(fmt.Sprintf("%s: %v; keeping the previous block", s.marker, r.err))
+			warn(fmt.Sprintf("%s: %v; keeping the previous block", s.name, r.err))
 			continue
 		}
-		next, err := replaceBlock(doc, s.marker, r.body)
+		next, err := replaceAll(doc, r.blocks)
 		if err != nil {
-			warn(fmt.Sprintf("%s: %v", s.marker, err))
+			warn(fmt.Sprintf("%s: %v", s.name, err))
 			continue
 		}
 		if r.files != nil {
 			if err := writeCards(filepath.Join(filepath.Dir(*readme), filepath.FromSlash(r.dir)), r.files); err != nil {
-				warn(fmt.Sprintf("%s: writing SVGs: %v; keeping the previous block", s.marker, err))
+				warn(fmt.Sprintf("%s: writing SVGs: %v; keeping the previous block", s.name, err))
 				continue
 			}
 		}
@@ -144,6 +184,23 @@ func main() {
 	fmt.Printf("sync-readme: %d/%d sections refreshed\n", updated, len(sections))
 }
 
+// replaceAll applies every block of one section, or none of them.
+func replaceAll(doc []byte, blocks map[string]string) ([]byte, error) {
+	names := make([]string, 0, len(blocks))
+	for n := range blocks {
+		names = append(names, n)
+	}
+	sort.Strings(names)
+	for _, n := range names {
+		next, err := replaceBlock(doc, n, blocks[n])
+		if err != nil {
+			return nil, err
+		}
+		doc = next
+	}
+	return doc, nil
+}
+
 // iconsFor resolves the tags' icons; failures only cost the icons, not the section.
 func iconsFor(ctx context.Context, marker string, tags []Tag) map[string]iconSVG {
 	var names []string
@@ -159,8 +216,8 @@ func iconsFor(ctx context.Context, marker string, tags []Tag) map[string]iconSVG
 	return icons
 }
 
-// writeCards writes the current cards and removes ones for projects that are
-// no longer featured, so the directory mirrors the README.
+// writeCards writes the current SVGs and removes stale ones, so the directory
+// mirrors the README.
 func writeCards(dir string, files map[string][]byte) error {
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		return err
