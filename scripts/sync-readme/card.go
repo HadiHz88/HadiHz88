@@ -36,9 +36,12 @@ var lightTheme = theme{
 var difficultyPips = map[string]int{"easy": 1, "medium": 2, "hard": 3, "advanced": 4}
 
 const (
-	cardW   = 440
-	cardH   = 200
-	padX    = 24
+	cardW = 440
+	cardH = 200
+	padX  = 24
+	// Transparent margin baked into each card: GitHub strips CSS, so this is
+	// the only way to put a gap between cards laid out side by side.
+	cardM   = 10
 	fontStk = `-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif`
 )
 
@@ -49,7 +52,8 @@ func card(p Project, t theme, icons map[string]iconSVG) []byte {
 		sc = t.muted
 	}
 	var b strings.Builder
-	fmt.Fprintf(&b, `<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-labelledby="t d">`, cardW, cardH, cardW, cardH)
+	ow, oh := cardW+2*cardM, cardH+2*cardM
+	fmt.Fprintf(&b, `<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-labelledby="t d">`, ow, oh, ow, oh)
 	fmt.Fprintf(&b, `<title id="t">%s</title><desc id="d">%s</desc>`, x(p.Title), x(p.Summary))
 	fmt.Fprintf(&b, `<style>
 text{font-family:%s}
@@ -57,6 +61,7 @@ text{font-family:%s}
 @keyframes live{50%%{opacity:.25}}
 @media (prefers-reduced-motion:reduce){.live{animation:none}}
 </style>`, fontStk)
+	fmt.Fprintf(&b, `<g transform="translate(%d %d)">`, cardM, cardM)
 	fmt.Fprintf(&b, `<defs><clipPath id="c"><rect width="%d" height="%d" rx="14"/></clipPath><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient></defs>`, cardW, cardH, sc, t.accent)
 	fmt.Fprintf(&b, `<g clip-path="url(#c)"><rect width="%d" height="%d" fill="%s"/><rect width="%d" height="3" fill="url(#g)"/></g>`, cardW, cardH, t.bg, cardW)
 	fmt.Fprintf(&b, `<rect x=".5" y=".5" width="%d" height="%d" rx="13.5" fill="none" stroke="%s"/>`, cardW-1, cardH-1, t.border)
@@ -127,7 +132,7 @@ text{font-family:%s}
 		cx += w + 6
 	}
 
-	b.WriteString(`</svg>`)
+	b.WriteString(`</g></svg>`)
 	b.WriteString("\n")
 	return []byte(b.String())
 }

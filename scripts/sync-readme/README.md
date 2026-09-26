@@ -7,7 +7,7 @@ Standard library only; runs daily from `.github/workflows/profile-sync.yml`.
 |---|---|---|
 | `EXPERIENCE` | `/api/experiences`, featured, not yet ended | "What am I up to?" list |
 | `EDUCATION` | `/api/educations`, featured | list, newest first |
-| `SKILLS` | `/api/tags`, `isSkill=true` | shields.io badges by category |
+| `SKILLS` | `/api/tags`, `isSkill=true`, featured | SVG banner in `assets/generated/skills/` |
 | `PROJECTS` | `/api/projects`, featured, active first, max 6 | SVG cards in `assets/generated/projects/` |
 
 Every section fails soft: a non-200, a timeout (10s per request) or an empty result keeps
@@ -22,7 +22,10 @@ STRAPI_URL=https://cms.hadihz.me STRAPI_TOKEN=... go run ./scripts/sync-readme
 go test ./scripts/sync-readme
 ```
 
-Flags: `-readme README.md`, `-assets assets/generated/projects`, `-site https://hadihz.me`.
+Flags: `-readme README.md`, `-assets assets/generated`, `-site https://hadihz.me`.
+
+Tag icons come from the public Iconify API and are inlined into the SVGs, since an image
+cannot load external resources. If Iconify fails, chips fall back to a coloured dot.
 
 ## Token
 

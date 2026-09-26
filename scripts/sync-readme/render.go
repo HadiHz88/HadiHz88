@@ -150,96 +150,12 @@ func renderEducation(items []Education, now time.Time) (string, error) {
 	return b.String(), nil
 }
 
-var skillGroups = []struct{ category, heading string }{
-	{"language", "Languages"},
-	{"frontend", "Frontend"},
-	{"backend", "Backend"},
-	{"databases", "Databases & ORMs"},
-	{"devops", "Cloud & DevOps"},
-	{"tools", "Tools"},
-}
-
-func renderSkills(tags []Tag) (string, error) {
-	if len(tags) == 0 {
-		return "", errors.New("no skills")
-	}
-	sort.SliceStable(tags, func(i, j int) bool {
-		a, b := tags[i], tags[j]
-		if a.Featured != b.Featured {
-			return a.Featured
-		}
-		if a.Level != b.Level {
-			return a.Level > b.Level
-		}
-		return strings.ToLower(a.Name) < strings.ToLower(b.Name)
-	})
-	by := map[string][]Tag{}
-	for _, t := range tags {
-		by[t.Category] = append(by[t.Category], t)
-	}
-
-	var b strings.Builder
-	for _, g := range skillGroups {
-		list := by[g.category]
-		if len(list) == 0 {
-			continue
-		}
-		badges := make([]string, len(list))
-		for i, t := range list {
-			badges[i] = badge(t)
-		}
-		fmt.Fprintf(&b, "### %s\n\n%s\n\n", g.heading, strings.Join(badges, " "))
-	}
-	// Concepts rather than tools: their CMS icons are stand-ins, so plain text reads better.
-	if other := by["other"]; len(other) > 0 {
-		names := make([]string, len(other))
-		for i, t := range other {
-			names[i] = md(t.Name)
-		}
-		fmt.Fprintf(&b, "<sub>**Also:** %s</sub>\n", strings.Join(names, " · "))
-	}
-	return b.String(), nil
-}
-
-var shieldsEscaper = strings.NewReplacer("-", "--", "_", "__")
-
-func badge(t Tag) string {
-	color, logo := "555555", ""
-	if t.Icon != nil {
-		if c := strings.TrimPrefix(t.Icon.Color, "#"); isHex(c) {
-			color = strings.ToUpper(c)
-		}
-		if slug, ok := strings.CutPrefix(t.Icon.Name, "simple-icons:"); ok {
-			logo = slug
-		}
-	}
-	label := url.PathEscape(shieldsEscaper.Replace(t.Name))
-	src := "https://img.shields.io/badge/-" + label + "-" + color + "?style=for-the-badge"
-	if logo != "" {
-		src += "&logo=" + url.QueryEscape(logo) + "&logoColor=" + logoColor(color)
-	}
-	return "![" + md(t.Name) + "](" + src + ")"
-}
-
 func isHex(s string) bool {
 	if len(s) != 6 {
 		return false
 	}
 	_, err := strconv.ParseUint(s, 16, 32)
 	return err == nil
-}
-
-// logoColor picks black or white for contrast using perceived luminance.
-func logoColor(hex string) string {
-	v, err := strconv.ParseUint(hex, 16, 32)
-	if err != nil {
-		return "white"
-	}
-	r, g, b := float64(v>>16&0xff), float64(v>>8&0xff), float64(v&0xff)
-	if 0.299*r+0.587*g+0.114*b > 160 {
-		return "black"
-	}
-	return "white"
 }
 
 var statusRank = map[string]int{"active": 0, "planned": 1, "completed": 2, "archived": 3, "canceled": 4}

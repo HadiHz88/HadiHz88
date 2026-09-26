@@ -43,18 +43,34 @@ func TestSafeURLRejectsNonHTTP(t *testing.T) {
 	}
 }
 
-func TestBadge(t *testing.T) {
-	got := badge(Tag{Name: "C#", Icon: &Icon{Name: "simple-icons:csharp", Color: "#239120"}})
-	if !strings.Contains(got, "/badge/-C%23-239120?") || !strings.Contains(got, "logo=csharp&logoColor=white") {
-		t.Fatalf("got %s", got)
+func TestRenderSkillsKeepsFeaturedGroupedInOrder(t *testing.T) {
+	tags := []Tag{
+		{Name: "Hidden", Category: "language", Featured: false, Level: 99},
+		{Name: "React", Category: "frontend", Featured: true, Level: 90},
+		{Name: "TypeScript", Category: "language", Featured: true, Level: 90},
+		{Name: "C#", Category: "language", Featured: true, Level: 70},
 	}
-	got = badge(Tag{Name: "Drizzle ORM", Icon: &Icon{Name: "simple-icons:drizzle", Color: "#C5F74F"}})
-	if !strings.Contains(got, "logoColor=black") {
-		t.Fatalf("light background should get a black logo: %s", got)
+	body, files, err := renderSkills(tags, nil, "assets/generated/skills", "https://x.dev")
+	if err != nil {
+		t.Fatal(err)
 	}
-	got = badge(Tag{Name: "styled-components", Icon: &Icon{Name: "pixelarticons:x", Color: "bad"}})
-	if !strings.Contains(got, "/badge/-styled--components-555555?style=for-the-badge)") {
-		t.Fatalf("got %s", got)
+	if strings.Contains(body, "Hidden") || !strings.Contains(body, "Languages: TypeScript, C# · Frontend: React") {
+		t.Fatalf("got %s", body)
+	}
+	if len(files) != 2 || files["assets/generated/skills/skills-dark.svg"] == nil {
+		t.Fatalf("files: %v", len(files))
+	}
+	if !strings.Contains(string(files["assets/generated/skills/skills-dark.svg"]), "C#") {
+		t.Fatal("banner missing skill")
+	}
+}
+
+func TestReadableSwapsInvisibleColours(t *testing.T) {
+	if readable("#000000", darkTheme) != darkTheme.text || readable("#000000", lightTheme) != "#000000" {
+		t.Fatal("black handling wrong")
+	}
+	if readable("#ffffff", lightTheme) != lightTheme.text {
+		t.Fatal("white on light should swap")
 	}
 }
 

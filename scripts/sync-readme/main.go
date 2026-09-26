@@ -19,6 +19,7 @@ import (
 
 type result struct {
 	body  string
+	dir   string // where files are written; the renderer's paths share this prefix
 	files map[string][]byte
 	err   error
 }
@@ -30,8 +31,8 @@ type section struct {
 
 func main() {
 	readme := flag.String("readme", "README.md", "README to update in place")
-	assets := flag.String("assets", "assets/generated/projects", "directory for project cards, relative to the README")
-	site := flag.String("site", "https://hadihz.me", "base URL project cards link to")
+	assets := flag.String("assets", "assets/generated", "directory for generated SVGs, relative to the README")
+	site := flag.String("site", "https://hadihz.me", "base URL the cards and banner link to")
 	flag.Parse()
 
 	base := strings.TrimRight(os.Getenv("STRAPI_URL"), "/")
@@ -49,7 +50,8 @@ func main() {
 
 	c := newClient(base, token)
 	now := time.Now().UTC()
-	assetDir := filepath.ToSlash(*assets)
+	projectsDir := path.Join(filepath.ToSlash(*assets), "projects")
+	skillsDir := path.Join(filepath.ToSlash(*assets), "skills")
 	sections := []section{
 		{"PROJECTS", func(ctx context.Context) result {
 			items, err := fetchAll[Project](ctx, c, "/api/projects", query(
@@ -60,20 +62,13 @@ func main() {
 			if err != nil {
 				return result{err: err}
 			}
-			var names []string
+			var tags []Tag
 			for _, p := range selectProjects(items) {
-				for _, t := range p.Tags {
-					if n := iconName(t); n != "" {
-						names = append(names, n)
-					}
-				}
+				tags = append(tags, p.Tags...)
 			}
-			icons, err := fetchIcons(ctx, names)
-			if err != nil {
-				warn(fmt.Sprintf("PROJECTS: icons: %v; affected chips fall back to dots", err))
-			}
-			body, files, err := renderProjects(items, icons, assetDir, *site)
-			return result{body: body, files: files, err: err}
+			icons := iconsFor(ctx, "PROJECTS", tags)
+			body, files, err := renderProjects(items, icons, projectsDir, *site)
+			return result{body: body, dir: projectsDir, files: files, err: err}
 		}},
 		{"EXPERIENCE", func(ctx context.Context) result {
 			items, err := fetchAll[Experience](ctx, c, "/api/experiences", query("filters[featured][$eq]", "true"))
@@ -92,12 +87,16 @@ func main() {
 			return result{body: body, err: err}
 		}},
 		{"SKILLS", func(ctx context.Context) result {
-			items, err := fetchAll[Tag](ctx, c, "/api/tags", query("filters[isSkill][$eq]", "true"))
+			items, err := fetchAll[Tag](ctx, c, "/api/tags", query(
+				"filters[isSkill][$eq]", "true",
+				"filters[featured][$eq]", "true",
+			))
 			if err != nil {
 				return result{err: err}
 			}
-			body, err := renderSkills(items)
-			return result{body: body, err: err}
+			icons := iconsFor(ctx, "SKILLS", items)
+			body, files, err := renderSkills(items, icons, skillsDir, *site)
+			return result{body: body, dir: skillsDir, files: files, err: err}
 		}},
 	}
 
@@ -126,8 +125,8 @@ func main() {
 			continue
 		}
 		if r.files != nil {
-			if err := writeCards(filepath.Join(filepath.Dir(*readme), filepath.FromSlash(assetDir)), r.files); err != nil {
-				warn(fmt.Sprintf("%s: writing cards: %v; keeping the previous block", s.marker, err))
+			if err := writeCards(filepath.Join(filepath.Dir(*readme), filepath.FromSlash(r.dir)), r.files); err != nil {
+				warn(fmt.Sprintf("%s: writing SVGs: %v; keeping the previous block", s.marker, err))
 				continue
 			}
 		}
@@ -143,6 +142,21 @@ func main() {
 		}
 	}
 	fmt.Printf("sync-readme: %d/%d sections refreshed\n", updated, len(sections))
+}
+
+// iconsFor resolves the tags' icons; failures only cost the icons, not the section.
+func iconsFor(ctx context.Context, marker string, tags []Tag) map[string]iconSVG {
+	var names []string
+	for _, t := range tags {
+		if n := iconName(t); n != "" {
+			names = append(names, n)
+		}
+	}
+	icons, err := fetchIcons(ctx, names)
+	if err != nil {
+		warn(fmt.Sprintf("%s: icons: %v; affected chips fall back to dots", marker, err))
+	}
+	return icons
 }
 
 // writeCards writes the current cards and removes ones for projects that are
