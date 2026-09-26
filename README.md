@@ -29,12 +29,16 @@ I'm a **Full Stack Software Engineer** with expertise in building scalable cloud
 
 Feel free to check out my [website](https://www.hadihz.me) to get the full experience!
 
-## 👨‍💻 What I'm Up To
+## 👨‍💻 What am I up to?
+
+<!-- EXPERIENCE:START -->
+- 💼 **Junior Software Engineer** @ **Poyesis** · <sub>Full-time · since Jun 2026 · Beirut, Lebanon</sub>
+- 🧑‍🏫 **Lab Assistant — Data Structures & Algorithms** @ [**Lebanese University**](https://ul.edu.lb) · <sub>Part-time · since Feb 2025 · Beirut, Lebanon</sub>
+  <br><sub>Teaching assistant for the data structures and algorithms labs: arrays, linked lists, stacks, queues, trees, graphs, sorting, searching, and dynamic programming. Runs lab sessions and mentors students one-on-one.</sub>
+<!-- EXPERIENCE:END -->
 
 ```typescript
 const hadi = {
-    currentFocus: "Master's in Computer Science @ Lebanese University",
-    role: "Full Stack Intern @ Poyesis 🇱🇧 | Open to Full-Time Opportunities",
     workingOn: ["Turborepo Monorepo with Astro + Kottster", "Cloud-Native Applications"],
     learning: ["DevOps practices", "Microservices Architecture", "Mobile Development with Expo/React Native"],
     askMeAbout: ["React", "Next.js", "NestJS", "AWS", "Astro", "System Architecture", "DSA"],
@@ -42,128 +46,53 @@ const hadi = {
 };
 ```
 
-## 💼 Experience
-
-### 🏢 **Poyesis** - *Full Stack Developer Intern*
-
-**March 2026 - Present** | Software & Digital Solutions · Beirut, Lebanon 🇱🇧
-
-- Building a full-stack content platform using a **Turborepo** monorepo architecture
-- Developing an **Astro**-based public-facing web frontend with multilingual (i18n) support
-- Engineering an admin panel with **Strapi**
-- Working with **TypeScript**, **Bun**, **Astro** across a shared monorepo workspace
-
-### ☁️ **ZeroAndOne** - *Full Stack Developer Intern*
-
-**July 2025 - Sept 2025** | Cloud-native software & AWS consulting company
-
-- Completed intensive 9-week full-stack development and cloud computing internship
-- Successfully completed AWS Partner training (cloud architecture, networking, security, cost optimization)
-- Engineered serverless applications using AWS Lambda, S3, DynamoDB, and Cognito
-- Implemented CI/CD pipelines and infrastructure-as-code solutions
-
-### 🎓 **Lebanese University** - *Computer Lab Assistant*
-
-**Feb 2024 - Present** | Data Structures & Algorithms Course
-
-- Facilitate weekly lab sessions for 30+ students on fundamental and advanced DSA concepts
-- Provide technical mentorship through code reviews and debugging sessions
-- Help students develop strong problem-solving skills and write efficient code
-
 ## 🎓 Education
 
-**Master's in Computer Science** | Lebanese University | *Oct 2025 - Present*
-
-**Bachelor's in Computer Science** | Lebanese University | *Oct 2021 - June 2025*
+<!-- EDUCATION:START -->
+- 🎓 **Master 2 — AI & Data Engineering** · [Lebanese University — Faculty of Science](https://ul.edu.lb) · <sub>Sep 2026 – Present · In progress</sub>
+- 🎓 **Master in Computer Science** · [Lebanese University — Faculty of Science](https://ul.edu.lb) · <sub>Sep 2025 – Jun 2026</sub>
+- 🎓 **Bachelor in Computer Science** · [Lebanese University — Faculty of Science](https://ul.edu.lb) · <sub>Sep 2021 – Jun 2025</sub>
+<!-- EDUCATION:END -->
 
 ## 🛠️ Tech Stack
 
+<!-- SKILLS:START -->
 ### Languages
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=openjdk&logoColor=white) ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) ![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) ![Java](https://img.shields.io/badge/-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ### Frontend
 
-![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white) ![Redux](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![Expo](https://img.shields.io/badge/-Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white) ![Expo](https://img.shields.io/badge/-Expo-000000?style=for-the-badge&logo=expo&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Blade](https://img.shields.io/badge/-Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![Material UI](https://img.shields.io/badge/-Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white) ![React Native](https://img.shields.io/badge/-React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 
 ### Backend
 
-![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![ASP.NET](https://img.shields.io/badge/-ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![Strapi](https://img.shields.io/badge/-Strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white)
+![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![ASP.NET Core](https://img.shields.io/badge/-ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![Express.js](https://img.shields.io/badge/-Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![Strapi](https://img.shields.io/badge/-Strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white) ![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ### Databases & ORMs
 
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white) ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white) ![Drizzle ORM](https://img.shields.io/badge/-Drizzle_ORM-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black) ![EFCore](https://img.shields.io/badge/-EFCore-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white) ![Drizzle ORM](https://img.shields.io/badge/-Drizzle%20ORM-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/-Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)
 
 ### Cloud & DevOps
 
-![AWS](https://img.shields.io/badge/-AWS-FF9900?style=for-the-badge&logo=aws&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Turborepo](https://img.shields.io/badge/-Turborepo-EEEEEE?style=for-the-badge&logo=turborepo&logoColor=black)
+![AWS](https://img.shields.io/badge/-AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=black) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white) ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-<!--
+### Tools
+
+![Turborepo](https://img.shields.io/badge/-Turborepo-FF1E56?style=for-the-badge&logo=turborepo&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+<sub>**Also:** REST API · Data Structures · Microservices · OOP · Project Management · DevOps</sub>
+<!-- SKILLS:END -->
+
 ## 📚 Featured Projects
 
-<table>
-<tr>
-<td width="50%">
-
-### 🎯 **Dynamic Data Entry & Template-Based Form System**
-
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#) [![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)](#) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#)
-
-**Key Features:**
-
-- 🔧 Flexible data entry system for multiple document types
-- 🎨 Dynamic backend with customizable form templates
-- 🔐 Secure admin dashboard with RBAC
-- ⚡ Real-time form validation
-
-</td>
-<td width="50%">
-
-### 🌐 **Bikhedemtak - Local Service Network**
-
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#) [![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)](#) [![Android](https://img.shields.io/badge/-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](#)
-
-**Key Features:**
-
-- 📱 Cross-platform web and mobile applications
-- 👥 User-service provider connection system
-- 🔍 Location-based service discovery
-- 💬 Real-time messaging and requests
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📊 **DonationsManager - Offline Tracking System**
-
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#) [![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](#)
-
-**Key Features:**
-
-- 💾 Zero-setup offline deployment
-- 📦 Portable with full PHP runtime
-- 📈 Comprehensive donation analytics
-- 🎯 Built for non-technical clients
-
-</td>
-<td width="50%">
-
-### 🚀 **CloudQ- GenAI Powered ChatBot and LMS**
-
-[![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)](#) [![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)](#) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#) [![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
-
-**Key Features:**
-
-- 🏗️ Modern NestJS architecture
-- 🗄️ Prisma ORM integration
-- 🤖 GenAI chatbot for learning assistance
-- 📚 Advanced React State Management Patterns- RTKQuery
-
-</td>
-</tr>
-</table>
--->
+<!-- PROJECTS:START -->
+<p align="center">
+<a href="https://hadihz.me/projects/awlak-benjah"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/projects/awlak-benjah-dark.svg"><img alt="Awlak Benjah — Offline-first degree and GPA tracker for university students, built as a Turborepo monorepo pairing an Expo React Native app with an Astro showcase site." src="assets/generated/projects/awlak-benjah-light.svg" width="49%"></picture></a> <a href="https://hadihz.me/projects/apamea"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/projects/apamea-dark.svg"><img alt="Apamea — Wealth-tracking platform for stocks, crypto and real estate, where every valuation, return and currency effect is computed server-side and reported in EUR." src="assets/generated/projects/apamea-light.svg" width="49%"></picture></a>
+<a href="https://hadihz.me/projects/hadihz-me"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/projects/hadihz-me-dark.svg"><img alt="hadihz.me — This very website you are visiting right now, focusing purely on aesthetic, visuals, and performance, with a minimal JavaScript footprint, built with Astro 7, backed by Strapi 5!" src="assets/generated/projects/hadihz-me-light.svg" width="49%"></picture></a> <a href="https://hadihz.me/projects/rowad"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/projects/rowad-dark.svg"><img alt="Rowad — Bilingual entrepreneurship platform for Saudi founders — podcasts, courses, a resource library and tooling — shipped as a static Astro site over a Strapi CMS." src="assets/generated/projects/rowad-light.svg" width="49%"></picture></a>
+<a href="https://hadihz.me/projects/university-equivalency-system"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/projects/university-equivalency-system-dark.svg"><img alt="University Equivalency System — Internal university system for course equivalency requests, built around a strict multi-stage approval workflow with a complete audit trail." src="assets/generated/projects/university-equivalency-system-light.svg" width="49%"></picture></a> <a href="https://hadihz.me/projects/cloudq"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/projects/cloudq-dark.svg"><img alt="CloudQ — Multi-organization LMS with AWS Bedrock-powered AI features for personalized learning. Built with React, NestJS, and AWS cloud services." src="assets/generated/projects/cloudq-light.svg" width="49%"></picture></a>
+</p>
+<!-- PROJECTS:END -->
 
 ## 📊 GitHub Statistics
 
