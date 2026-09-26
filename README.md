@@ -79,7 +79,7 @@ const hadi = {
 
 <!-- STATS:START -->
 <p align="center">
-<a href="https://github.com/HadiHz88?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/stats/stats-dark.svg"><img alt="GitHub stats — 4,801 contributions in the last year, 20 stars, 13 public repositories" src="assets/generated/stats/stats-light.svg" width="100%"></picture></a>
+<a href="https://github.com/HadiHz88?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/stats/stats-dark.svg"><img alt="GitHub stats — 4,802 contributions in the last year, 20 stars, 13 public repositories" src="assets/generated/stats/stats-light.svg" width="100%"></picture></a>
 </p>
 <!-- STATS:END -->
 
