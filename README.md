@@ -63,7 +63,7 @@ const hadi = {
 
 <!-- SKILLS:START -->
 <p align="center">
-<a href="https://hadihz.me/tags"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/skills/skills-dark.svg"><img alt="Tech stack — Languages: TypeScript, C# · Frontend: React, Astro, Expo, Tailwind CSS, Next.js · Backend: NestJS, ASP.NET Core · Databases &amp; ORMs: Redis, Drizzle ORM, PostgreSQL, MongoDB, Prisma, Amazon DynamoDB · Cloud &amp; DevOps: AWS, Docker, GitHub Actions · Tools: Turborepo" src="assets/generated/skills/skills-light.svg" width="100%"></picture></a>
+<a href="https://hadihz.me/tags"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/skills/skills-dark.svg"><img alt="Tech stack — Languages: TypeScript, C# · Frontend: React, Astro, Expo, Tailwind CSS, Next.js · Backend: NestJS, ASP.NET Core · Databases &amp; ORMs: Redis, Drizzle ORM, PostgreSQL, MongoDB, Prisma, Amazon DynamoDB · Cloud &amp; DevOps: AWS, Docker, GitHub Actions, Sentry · Tools: Turborepo" src="assets/generated/skills/skills-light.svg" width="100%"></picture></a>
 </p>
 <!-- SKILLS:END -->
 
@@ -81,7 +81,7 @@ const hadi = {
 
 <!-- STATS:START -->
 <p align="center">
-<a href="https://github.com/HadiHz88?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/stats/stats-dark.svg"><img alt="GitHub stats — 6,325 contributions in the last year, 23 stars, 14 public repositories" src="assets/generated/stats/stats-light.svg" width="100%"></picture></a>
+<a href="https://github.com/HadiHz88?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/stats/stats-dark.svg"><img alt="GitHub stats — 6,358 contributions in the last year, 23 stars, 14 public repositories" src="assets/generated/stats/stats-light.svg" width="100%"></picture></a>
 </p>
 <!-- STATS:END -->
 
